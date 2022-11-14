@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'mySignature';
+  src: url('Cassandra.ttf');
+}
+
+nav{
+  content-visibility: hidden;
+}
+
+body{
+  margin: 0;
+  background: #EEEEEE;
+}
+
+p{
+  font-family: 'Playfair Display', serif;
+}
+
+h2{
+  font-family: 'Inter', sans-serif;
+  color: #DCDCDC;
+  text-shadow: 2px 1px #D4D4D4;
+  font-size: 4rem;
+  margin: 7% 10% 0;
+}
+
+#container{
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+  -webkit-scroll-snap-type: y mandatory;
+      -ms-scroll-snap-type: y mandatory;
+          scroll-snap-type: y mandatory;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.name {
+  font-family: 'mySignature';
+  color: black;
+  font-size: 4.5rem;
+}
+
+.title{
+  font-size: 2rem;
+}
+
+#hero{
+  justify-content: center;
+  align-items: center;
+}
+
+#bio{
+  font-size: 2rem;
+  width: 75%;
+  margin-left: 20%;
+}
+
+#bio-section{
+  background: lightpink;
+}
+
+#exp{
+  font-size: 2rem;
+  width: 75%;
+  margin-left: 20%;
+}
+
+#exp-section{
+  background: #DEBACE;
+}
+
+#project-section{
+  background: #D0C9C0;
+}
+
+ul > li{
+  list-style: none;
+  font-size: 1.3rem;
+  width: 80%;
+  margin-left: 10%;
+  font-family: 'Playfair Display', serif;
+}
+
+@media screen and (max-width: 768px) {
+  nav{
+    content-visibility: visible;
+    display: flex;
+    justify-content: space-evenly;
+    height: 5vh;
+    background: black;
+  }
+  
+  a{
+    margin-top: 1vh;
+    text-decoration: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+  }
+
+  section{
+    height: 94vh ;
+  }
+}

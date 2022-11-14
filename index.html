@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Playfair+Display&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Pierre Nguyen | SWE</title>
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#bio">About Me</a>
+    <a href="#exp">Experience</a>
+    <a href="#proj1">Projects</a>
+  </nav>
+  <div id="container">
+    <section id="hero">
+      <h1 class="name">Pierre Nguyen</h1>
+      <p class="title">Full-Stack Developer</p>
+    </section>
+    <section id="bio-section">
+      <h2 class="about-me animate__animated" >About Me</h2>
+      <p id="bio">Software engineer apprentice at Clover that wants to learn it all. Passionate about new technologies & continious growth.</p>
+    </section>
+    <section id="exp-section">
+      <h2 class="experience animate__animated">Experience</h2>
+      <p id="exp">Self-taught developer with a passion with design and front-end.</p>
+      <ul>
+        <li>↬&nbsp;Microsoft SWE Intern (SAP Team) | 2020 - 2021 | React, Python, Kusto - Streamlined a document for PM & finance teams </li>
+        <li>↬&nbsp;SoftwareONE Developer Associate | 2021 | C#, Docker, Azure - Used PowerApps & PowerAutomate to streamline tasks</li>
+      </ul>
+    </section>
+    <section id="project-section">
+      <h2 id=" proj1 animate__animated">Projects</h2>
+    </section>
+  </div>
+</body>
+<!-- Slide in on sectin entry JS -->
+<script>
+  const observer = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('animate__slideInLeft');
+    }
+  });
+});
+
+observer.observe(document.querySelector('.about-me'));
+observer.observe(document.querySelector('.experience'));
+observer.observe(document.querySelector('.proj1'));
+</script>
+</html>
