@@ -59,6 +59,7 @@ section{
   font-size: 2rem;
   width: 75%;
   margin-left: 20%;
+  height: 65%;
 }
 
 #bio-section{
@@ -95,11 +96,42 @@ ul > li{
   margin: 5% 0 0 10%;
 }
 
-img{
+.proj1{
   height: 200px;
   width: 300px;
   width: 100%;
   object-fit: cover;
+}
+
+.proj2{
+  height: 200px;
+  width: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.proj3{
+  height: 200px;
+  width: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.socials{
+  position: relative;
+}
+
+.github{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.linkedIn{
+  position: absolute;
+  bottom: 0;
+  right: 4%;
 }
 
 @media screen and (max-width: 768px) {
@@ -118,6 +150,10 @@ img{
     text-decoration: none;
     color: white;
     font-family: 'Playfair Display', serif;
+  }
+
+  .socials{
+    content-visibility: hidden;
   }
 
 }
