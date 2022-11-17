@@ -75,16 +75,31 @@ section{
   background: #DEBACE;
 }
 
-#project-section{
-  background: #D0C9C0;
-}
-
 ul > li{
   list-style: none;
   font-size: 1.3rem;
   width: 80%;
   margin-left: 10%;
   font-family: 'Playfair Display', serif;
+}
+
+#project-section{
+  background: #D0C9C0;
+}
+
+.projs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 5% 0 0 10%;
+}
+
+img{
+  height: 200px;
+  width: 300px;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {
@@ -94,6 +109,8 @@ ul > li{
     justify-content: space-evenly;
     height: 5vh;
     background: black;
+    position: fixed;
+    width: 100%;
   }
   
   a{
@@ -103,7 +120,4 @@ ul > li{
     font-family: 'Playfair Display', serif;
   }
 
-  section{
-    height: 94vh ;
-  }
 }

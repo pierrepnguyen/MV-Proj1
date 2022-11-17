@@ -18,10 +18,10 @@
 </head>
 <body>
   <nav>
-    <a href="#">Home</a>
-    <a href="#bio">About Me</a>
-    <a href="#exp">Experience</a>
-    <a href="#proj1">Projects</a>
+    <a href="#hero">Home</a>
+    <a href="#bio-section">About Me</a>
+    <a href="#exp-section">Experience</a>
+    <a href="#project-section">Projects</a>
   </nav>
   <div id="container">
     <section id="hero">
@@ -29,19 +29,31 @@
       <p class="title">Full-Stack Developer</p>
     </section>
     <section id="bio-section">
-      <h2 class="about-me animate__animated" >About Me</h2>
+      <h2 class="about-me animate__animated"> &lt;about-me&gt;</h2>
       <p id="bio">Software engineer apprentice at Clover that wants to learn it all. Passionate about new technologies & continious growth.</p>
     </section>
     <section id="exp-section">
-      <h2 class="experience animate__animated">Experience</h2>
+      <h2 class="experience animate__animated">&lt;experience&gt;</h2>
       <p id="exp">Self-taught developer with a passion with design and front-end.</p>
       <ul>
         <li>↬&nbsp;Microsoft SWE Intern (SAP Team) | 2020 - 2021 | React, Python, Kusto - Streamlined a document for PM & finance teams </li>
         <li>↬&nbsp;SoftwareONE Developer Associate | 2021 | C#, Docker, Azure - Used PowerApps & PowerAutomate to streamline tasks</li>
+        <!-- <li>↬&nbsp;</li> -->
       </ul>
     </section>
     <section id="project-section">
-      <h2 id=" proj1 animate__animated">Projects</h2>
+      <h2 class=" proj animate__animated">&lt;projects&gt;</h2>
+      <div class="projs">
+        <div>
+          <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YXBwbGljYXRpb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt="Project_Image_1">
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1533022139390-e31c488d69e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGFwcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" alt="Project_Image_2">
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1603566234499-85676f87022f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGFwcGxpY2F0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Project_Image_3">
+        </div>
+      </div>
     </section>
   </div>
 </body>
@@ -60,6 +72,6 @@
 
 observer.observe(document.querySelector('.about-me'));
 observer.observe(document.querySelector('.experience'));
-observer.observe(document.querySelector('.proj1'));
+observer.observe(document.querySelector('.proj'));
 </script>
 </html>
